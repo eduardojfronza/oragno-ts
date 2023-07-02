@@ -7,7 +7,7 @@ Este é um projeto destinado a facilitar a migração de um projeto React existe
 Antes de iniciar a migração, verifique se o ambiente de desenvolvimento atende aos seguintes requisitos:
 
 - Node.js (v18.13.0 ou superior)
-- NPM (v 8.19.3 ou superior)
+- NPM (v8.19.3 ou superior)
 - Projeto React existente
 
 Certifique-se de ter uma cópia de backup do projeto React antes de iniciar o processo de migração.

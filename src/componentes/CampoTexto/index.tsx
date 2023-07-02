@@ -6,12 +6,12 @@ interface CampoTextoPros {
      placeholder: string
      label: string
      valor: string
-     obrigatorio: boolean
+     obrigatorio?: boolean
 
      
 }
-
-const CampoTexto = ({ aoAlterado, label,obrigatorio, placeholder, valor}:CampoTextoPros) => {
+// se niguem passar nenhum valor para o "obrigatorio" ele vai ser false
+const CampoTexto = ({ aoAlterado, label,placeholder, valor, obrigatorio = false}:CampoTextoPros) => {
 
     const placeholderModificada = `${placeholder}...` 
 

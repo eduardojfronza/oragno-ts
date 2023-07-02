@@ -7,11 +7,11 @@ interface CampoTextoPros {
      label: string
      valor: string
      obrigatorio?: boolean
-
+     tipo?: 'text' | 'password' | 'date' | 'email' | 'number'
      
 }
 // se niguem passar nenhum valor para o "obrigatorio" ele vai ser false
-const CampoTexto = ({ aoAlterado, label,placeholder, valor, obrigatorio = false}:CampoTextoPros) => {
+const CampoTexto = ({ aoAlterado, label,placeholder, valor, obrigatorio = false, tipo = 'text'}:CampoTextoPros) => {
 
     const placeholderModificada = `${placeholder}...` 
 
@@ -27,7 +27,10 @@ const CampoTexto = ({ aoAlterado, label,placeholder, valor, obrigatorio = false}
             </label>
             <input 
             value={valor} 
-            onChange={aoDigitado} required={obrigatorio} placeholder={placeholderModificada}/>
+            onChange={aoDigitado} required={obrigatorio} placeholder={placeholderModificada}
+            type={tipo}
+            />
+            
         </div>
     )
 }

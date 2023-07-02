@@ -3,5 +3,6 @@ export interface IColaborador{
     cargo:string
     imagem:string
     time?: string
+    data: string
     // ? é para tornar  opcional
 }
